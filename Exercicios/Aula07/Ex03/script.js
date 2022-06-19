@@ -15,7 +15,6 @@ c2 = Math.pow(c2, 2);
 var c3 = c1+c2;
 
 var dab = Math.sqrt(c3);
-alert(dab);
 
 var c4 = xa-xc;
 var c5 = ya-yc;
@@ -25,7 +24,6 @@ c5 = Math.pow(c5, 2);
 var c6 = c4+c5;
 
 var dac = Math.sqrt(c6);
-alert(dac);
 
 var c7 = xb-xc;
 var c8 = yb-yc;
@@ -35,9 +33,8 @@ c8 = Math.pow(c8, 2);
 var c9 = c7+c8;
 
 var dbc = Math.sqrt(c9);
-alert(dbc);
 
-if((dab == dac & dab != dbc) || (dab == dbc & dab != dac)){
+if((dab == dac && dab != dbc) || (dab == dbc && dab != dac)){
     alert("É um triângulo isósceles");
 }else if(dab == dac == dbc || dab != dac != dbc){
     alert("Não é um triângulo isósceles");
