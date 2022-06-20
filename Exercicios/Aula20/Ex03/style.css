@@ -1,0 +1,33 @@
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: 'Consolas', Arial, Helvetica, sans-serif;
+    background-color: rgb(156, 233, 156);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    font: .9rem 'Fira Sans', sans-serif;
+}
+
+input[type='submit'], label {
+    margin-top: 1rem;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+input[type='submit']{
+    border: solid 1px black;
+}
+
+#pass, #username{
+    border-radius: 10px;
+    width: 250px;
+    height: 30px;
+}
+

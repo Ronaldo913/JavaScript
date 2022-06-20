@@ -1,0 +1,38 @@
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: 'Consolas', Arial, Helvetica, sans-serif;
+    background-color: rgb(156, 233, 156);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 100px;
+}
+
+#mostrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: solid 2px #0b4619;
+    background-color: #0b4619;
+    color: white;
+}
+
+#ps{
+    padding-top: 20px;
+    text-align: justify;
+}
