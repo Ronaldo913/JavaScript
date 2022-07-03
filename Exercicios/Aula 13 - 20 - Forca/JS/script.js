@@ -62,7 +62,7 @@ function letraA(id){
         alert(palavra[i]);
         if(id == palavra[i]){
             let span = document.getElementById(i);
-            span.innerText(palavra[i]);
+            span.appendChild();
         }
     }
 
