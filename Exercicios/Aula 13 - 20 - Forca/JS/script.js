@@ -38,6 +38,8 @@ for(i=0; i<letra.length; i++){
     let button = document.createElement("button");
     button.innerText = letra[i];
     button.setAttribute('onclick', 'letraA(\''+letra[i]+'\')');
+
+    let div = document.getElementById("keyboard");
     div.appendChild(button);
 }
 
@@ -55,6 +57,14 @@ for(i=0; i<lPalavra.length; i++){
 
 function letraA(id){
     alert(id);
+
+    for(i=0; i<palavra.length; i++){
+        alert(palavra[i]);
+        if(id == palavra[i]){
+
+        }
+    }
+
 }
     
     
