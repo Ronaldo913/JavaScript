@@ -54,14 +54,15 @@ for(i=0; i<lPalavra.length; i++){
     let div = document.getElementById("wDrawn");
     div.appendChild(span);
 }
-let a = "add";
+
 function letraA(id){
     alert(id);
-    alert(a[0]);
+    
     for(i=0; i<palavra.length; i++){
         alert(palavra[i]);
         if(id == palavra[i]){
-
+            let span = document.getElementById(i);
+            span.innerText(palavra[i]);
         }
     }
 
