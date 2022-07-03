@@ -1,4 +1,4 @@
-let lista = ["programador", "web", "css", "html", "div", "container", "style", "script", "site", "desenvolvedor", "programa", "linguagens", "lógica", "github"];
+let lista = ["programador", "web", "css", "html", "div", "container", "style", "script", "site", "desenvolvedor", "programa", "linguagens", "logica", "github"];
 
 function menssages(msge){
     let msg = document.createElement("h2");
@@ -11,7 +11,7 @@ function menssages(msge){
 let posicao = Math.floor(Math.random()*lista.length);
 
 let chances = 6;
-let img;
+let img = 1;
 
 document.getElementById("img").src = "../IMG/forca0"+img+".png";  
 
