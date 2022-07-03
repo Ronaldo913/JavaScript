@@ -91,10 +91,13 @@ main #div01 #wDrawn{
 }
 
 main #div01 #wDrawn span{
+    display: flex;
+    align-items: flex-end;
     width: 40px;
     border-bottom: 1px #3a9e3e solid;
     margin: 10px;
     margin-bottom: 50px;
+    font-size: 90px;
 }
 
 main #keyboard{
@@ -125,6 +128,9 @@ main #menssage{
     justify-content: center;
     align-items: center;
 
+}
+
+main #menssage h2{
     animation: go-back 5s infinite alternate;
 }
 

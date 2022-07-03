@@ -56,15 +56,37 @@ for(i=0; i<lPalavra.length; i++){
 }
 
 function letraA(id){
-    alert(id);
     
     for(i=0; i<palavra.length; i++){
-        alert(palavra[i]);
         if(id == palavra[i]){
             let span = document.getElementById(i);
-            span.appendChild();
+            let aux = document.createTextNode(id);
+            
+            span.appendChild(aux);
+
+            let div = document.getElementById("wDrawn");
+            div.appendChild(span);
+
+            let button = document.getElementById(aux);
+            button.setAttribute('class', 'c');
+            button.removeAttribute('onclick');
+        }else{
+            let span = document.getElementById(i);
+            let aux = document.createTextNode("");
+            
+            span.appendChild(aux);
+
+            let div = document.getElementById("wDrawn");
+            div.appendChild(span);
+
+            let button = document.getElementById(aux);
+            button.setAttribute('class', 'c');
+            button.removeAttribute('onclick');
+
+            chances--;
         }
     }
+
 
 }
     
