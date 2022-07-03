@@ -41,7 +41,8 @@ for(i=0; i<letra.length; i++){
     div.appendChild(button);
 }
 
-let palavra = lista[posicao];let lPalavra = palavra.split("");
+let palavra = lista[posicao];
+let lPalavra = palavra.split("");
 
 for(i=0; i<lPalavra.length; i++){
     // let palavra = lista[posicao]
