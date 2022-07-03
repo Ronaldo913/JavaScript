@@ -92,10 +92,11 @@ main #div01 #wDrawn{
 
 main #div01 #wDrawn span{
     display: flex;
+    justify-content: center;
     align-items: flex-end;
-    width: 40px;
+    width: 70px;
     border-bottom: 1px #3a9e3e solid;
-    margin: 10px;
+    margin: 14px;
     margin-bottom: 50px;
     font-size: 90px;
 }
@@ -121,6 +122,12 @@ main #keyboard button:hover{
     background-color: #2b6b2d;
     cursor: pointer;
     transform: translateX(0) scale(1.2);
+}
+
+.c, .e{
+    background-color: purple;
+    cursor: pointer;
+    transform: translateX(0) scale(1);
 }
 
 main #menssage{

@@ -1,8 +1,5 @@
 let lista = ["programador", "web", "css", "html", "div", "container", "style", "script", "site", "desenvolvedor", "programa", "linguagens", "lógica", "github"];
 
-img = 1;
-document.getElementById("img").src = "../IMG/forca0"+img+".png";
-
 function menssages(msge){
     let msg = document.createElement("h2");
     msg.innerText = msge;
@@ -11,24 +8,12 @@ function menssages(msge){
     div.appendChild(msg);
 }
 
-if(img == 1){
-    menssages("Bem vindo!");
-}else if(img == 2){
-    menssages("Ai minha cabeça... Toma cuidado!");
-}else if(img == 3){
-    menssages("Agora o corpo... Ai, ai, ai!");
-}else if(img == 4){
-    menssages("Isso não vai dá nada bom...");
-}else if(img == 5){
-    menssages("Se liga porra! Quero morrer não!");
-}else if(img == 6){
-    menssages("Só falta uma, UMA perna... Misera!");
-}else if(img == 7){
-    menssages("Ai não!");
-}
-
 let posicao = Math.floor(Math.random()*lista.length);
+
 let chances = 6;
+let img;
+
+document.getElementById("img").src = "../IMG/forca0"+img+".png";  
 
 
 let letras = "abcdefghijklmnopqrstuvwxyz";
@@ -57,6 +42,7 @@ for(i=0; i<lPalavra.length; i++){
 
 function letraA(id){
     
+    let aux2 = false;
     for(i=0; i<palavra.length; i++){
         if(id == palavra[i]){
             let span = document.getElementById(i);
@@ -67,9 +53,7 @@ function letraA(id){
             let div = document.getElementById("wDrawn");
             div.appendChild(span);
 
-            let button = document.getElementById(aux);
-            button.setAttribute('class', 'c');
-            button.removeAttribute('onclick');
+            aux2 = true;
         }else{
             let span = document.getElementById(i);
             let aux = document.createTextNode("");
@@ -78,31 +62,34 @@ function letraA(id){
 
             let div = document.getElementById("wDrawn");
             div.appendChild(span);
-
-            let button = document.getElementById(aux);
-            button.setAttribute('class', 'c');
-            button.removeAttribute('onclick');
-
-            chances--;
         }
     }
 
+    if(aux2 == false){
+        chances--;
+        alert(chances);
+    }
 
-}
-    
-    
-    // let img = 2;
-    
-    // for(i=0; i<chances; i++){
-    //     if(img == i){
-    //         document.getElementById("images").src = "../IMG/forca0"+img+".png";
-    //     }
-    // }
-    
-function jogando(letra){
-    for(i=0; i<posicao.length; i++){
-        // if(letra != posicao[i])
+    if(chances == 6){
+        img = 1;
+        menssages("Bem vindo!");
+    }else if(chances == 5){
         img = 2;
-        document.getElementById("images").src = "../IMG/forca0"+img+".png";
+        menssages("Ai minha cabeça... Toma cuidado!");
+    }else if(chances == 4){
+        img = 3;
+        menssages("Agora o corpo... Ai, ai, ai!");
+    }else if(chances == 3){
+        img = 4;
+        menssages("Isso não vai dá nada bom...");
+    }else if(chances == 2){
+        img = 5;
+        menssages("Reeita!");
+    }else if(chances == 1){
+        img = 6;
+        menssages("Só falta uma, UMA perna... Misera!");
+    }else if(chances == 0){
+        img = 7;
+        menssages("Ai não!");
     }
 }
