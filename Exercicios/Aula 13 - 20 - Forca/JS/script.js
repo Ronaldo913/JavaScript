@@ -1,5 +1,8 @@
 let lista = ["programador", "web", "css", "html", "div", "container", "style", "script", "site", "desenvolvedor", "programa", "linguagens", "lógica", "github"];
 
+img = 1;
+document.getElementById("img").src = "../IMG/forca0"+img+".png";
+
 function menssages(msge){
     let msg = document.createElement("h2");
     msg.innerText = msge;
@@ -7,9 +10,6 @@ function menssages(msge){
     let div = document.getElementById("menssage");
     div.appendChild(msg);
 }
-
-img = 1;
-document.getElementById("img").src = "../IMG/forca0"+img+".png";
 
 if(img == 1){
     menssages("Bem vindo!");
@@ -37,13 +37,11 @@ let letra = letras.split("");
 for(i=0; i<letra.length; i++){
     let button = document.createElement("button");
     button.innerText = letra[i];
-    
-    let div = document.getElementById("keyboard");
+    button.setAttribute('onclick', 'letraA(\''+letra[i]+'\')');
     div.appendChild(button);
 }
 
-let palavra = lista[posicao];
-let lPalavra = palavra.split("");
+let palavra = lista[posicao];let lPalavra = palavra.split("");
 
 for(i=0; i<lPalavra.length; i++){
     // let palavra = lista[posicao]
@@ -52,6 +50,10 @@ for(i=0; i<lPalavra.length; i++){
     
     let div = document.getElementById("wDrawn");
     div.appendChild(span);
+}
+
+function letraA(id){
+    alert(id);
 }
     
     
