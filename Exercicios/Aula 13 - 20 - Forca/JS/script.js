@@ -103,10 +103,7 @@ function letraA(id){
     }else if(chances == 0){
         img = 7;
         document.getElementById('mensagem').remove();
-        menssages("Ai não!");
-
-        alert("A palavra era: "+palavra);
-
+        menssages("Ai não! Você perdeu e me matou!");
 
         let botao = document.createElement("button");
         botao.setAttribute('id', 'jNovamente');
@@ -114,6 +111,12 @@ function letraA(id){
 
         let div = document.getElementById("nJogo");
         div.appendChild(botao);
+
+        reloading();
+
+        let resultado = document.createElement("p");
+        resultado.innerText = "A palavra era: "+palavra;
+        div.appendChild(resultado);
     }
 
     document.getElementById("img").src = "../IMG/forca0"+img+".png";  

@@ -162,6 +162,7 @@ main #nJogo #jNovamente{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 10px;
 }
 
 main #nJogo #jNovamente:hover{
