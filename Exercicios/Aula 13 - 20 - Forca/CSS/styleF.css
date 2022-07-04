@@ -124,9 +124,9 @@ main #keyboard button:hover{
     transform: translateX(0) scale(1.2);
 }
 
-.c, .e{
+.e, .e:hover{
     background-color: purple;
-    cursor: pointer;
+    cursor: crosshair;
     transform: translateX(0) scale(1);
 }
 

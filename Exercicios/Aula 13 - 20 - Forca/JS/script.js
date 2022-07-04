@@ -56,6 +56,10 @@ function letraA(id){
             div.appendChild(span);
 
             aux2 = true;
+
+            let button = document.getElementById(id);
+            button.setAttribute('class', 'e');
+            button.removeAttribute('onclick');
         }else{
             let span = document.getElementById(i);
             let aux = document.createTextNode("");
@@ -69,6 +73,10 @@ function letraA(id){
 
     if(aux2 == false){
         chances--;
+
+        let button = document.getElementById(id);
+        button.setAttribute('class', 'e');
+        button.removeAttribute('onclick');
     }
 
     if(chances == 6){
