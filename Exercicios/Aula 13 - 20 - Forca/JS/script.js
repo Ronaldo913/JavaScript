@@ -42,6 +42,11 @@ for(i=0; i<lPalavra.length; i++){
     div.appendChild(span);
 }
 
+function reloading(){
+    let botao = document.getElementById("jNovamente");
+    botao.setAttribute('onclick', 'window.location.reload()');
+}
+
 function letraA(id){
     
     let aux2 = false;
@@ -56,10 +61,6 @@ function letraA(id){
             div.appendChild(span);
 
             aux2 = true;
-
-            let button = document.getElementById(id);
-            button.setAttribute('class', 'e');
-            button.removeAttribute('onclick');
         }else{
             let span = document.getElementById(i);
             let aux = document.createTextNode("");
@@ -73,10 +74,6 @@ function letraA(id){
 
     if(aux2 == false){
         chances--;
-
-        let button = document.getElementById(id);
-        button.setAttribute('class', 'e');
-        button.removeAttribute('onclick');
     }
 
     if(chances == 6){
@@ -107,6 +104,15 @@ function letraA(id){
         img = 7;
         document.getElementById('mensagem').remove();
         menssages("Ai não!");
+
+        alert("A palavra era: "+palavra);
+
+
+        let botao = document.createElement("button");
+        botao.setAttribute('id', 'jNovamente');
+
+        let div = document.getElementById("nJogo");
+        div.appendChild(botao);
     }
 
     document.getElementById("img").src = "../IMG/forca0"+img+".png";  

@@ -124,22 +124,37 @@ main #keyboard button:hover{
     transform: translateX(0) scale(1.2);
 }
 
-.e, .e:hover{
+.erro, .erro:hover{
     background-color: purple;
     cursor: crosshair;
     transform: translateX(0) scale(1);
+    
 }
 
 main #menssage{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 main #menssage h2{
     animation: go-back 5s infinite alternate;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+main #nJogo{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+main #nJogo #jNovamente{
+    width: 150px;
+    height: 60px;
+    background-color: #3a9e3e;
+    color: white;
+    cursor: pointer;
 }
 
 @keyframes go-back {
