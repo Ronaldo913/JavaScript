@@ -84,10 +84,6 @@ function letraA(id) {
             aux2 = true;
             aux3++;
 
-            let button = document.getElementById(id);
-            button.setAttribute('class', 'ok');
-            button.removeAttribute('onclick');
-
             if (aux3 == palavra.length) {
                 reloading();
             }
@@ -104,6 +100,9 @@ function letraA(id) {
 
     if (aux2 == false) {
         chances--;
+        // let button = document.getElementById(id);
+        // button.setAttribute('class', 'ok');
+        // button.removeAttribute('onclick');
     }
 
     if (chances == 6) {
@@ -139,4 +138,7 @@ function letraA(id) {
     }
 
     document.getElementById("img").src = "../IMG/forca0" + img + ".png";
+    let button = document.getElementById(id);
+    button.setAttribute('class', 'ok');
+    button.removeAttribute('onclick');
 }
