@@ -124,11 +124,10 @@ main #keyboard button:hover{
     transform: translateX(0) scale(1.2);
 }
 
-.ok, .ok:hover{
+main #keyboard .ok, main #keyboard .ok:hover{
     background-color: purple;
     cursor: crosshair;
-    transform: translateX(0) scale(1);
-    
+    transform: translateX(0) scale(1);   
 }
 
 main #menssage{

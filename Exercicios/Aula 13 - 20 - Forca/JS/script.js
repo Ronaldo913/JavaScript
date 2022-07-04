@@ -25,6 +25,7 @@ for (i = 0; i < letra.length; i++) {
     let button = document.createElement("button");
     button.innerText = letra[i];
     button.setAttribute('onclick', 'letraA(\'' + letra[i] + '\')');
+    button.setAttribute('id', letra[i]);
 
     let div = document.getElementById("keyboard");
     div.appendChild(button);
@@ -64,12 +65,10 @@ function reloading() {
     }
 }
 
-
 let aux3 = 0;
 
 function letraA(id) {
 
-    // let bo = document.getElementById(id).setAttribute('class', 'ok');
     let aux2 = false;
 
     for (i = 0; i < palavra.length; i++) {
@@ -85,12 +84,13 @@ function letraA(id) {
             aux2 = true;
             aux3++;
 
+            let button = document.getElementById(id);
+            button.setAttribute('class', 'ok');
+            button.removeAttribute('onclick');
+
             if (aux3 == palavra.length) {
                 reloading();
             }
-
-            // document.getElementById(id).setAttribute('class', 'ok');
-            // document.getElementById(id).removeAttribute('onclick');
         } else {
             let span = document.getElementById(i);
             let aux = document.createTextNode("");
