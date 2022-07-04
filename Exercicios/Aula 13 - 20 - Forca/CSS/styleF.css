@@ -139,9 +139,6 @@ main #menssage{
 
 main #menssage h2{
     animation: go-back 5s infinite alternate;
-}
-
-main #menssage h2{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 

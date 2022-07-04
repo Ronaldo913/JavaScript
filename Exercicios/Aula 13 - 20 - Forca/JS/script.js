@@ -2,6 +2,7 @@ let lista = ["programador", "web", "css", "html", "div", "container", "style", "
 
 function menssages(msge){
     let msg = document.createElement("h2");
+    msg.setAttribute('id', 'mensagem');
     msg.innerText = msge;
     
     let div = document.getElementById("menssage");
@@ -13,8 +14,9 @@ let posicao = Math.floor(Math.random()*lista.length);
 let chances = 6;
 let img = 1;
 
-document.getElementById("img").src = "../IMG/forca0"+img+".png";  
+menssages("Bem vindo!");
 
+document.getElementById("img").src = "../IMG/forca0"+img+".png";  
 
 let letras = "abcdefghijklmnopqrstuvwxyz";
 let letra = letras.split("");
@@ -67,29 +69,37 @@ function letraA(id){
 
     if(aux2 == false){
         chances--;
-        alert(chances);
     }
 
     if(chances == 6){
         img = 1;
+        document.getElementById('mensagem').remove();
         menssages("Bem vindo!");
     }else if(chances == 5){
         img = 2;
+        document.getElementById('mensagem').remove();
         menssages("Ai minha cabeça... Toma cuidado!");
     }else if(chances == 4){
         img = 3;
+        document.getElementById('mensagem').remove();
         menssages("Agora o corpo... Ai, ai, ai!");
     }else if(chances == 3){
         img = 4;
+        document.getElementById('mensagem').remove();
         menssages("Isso não vai dá nada bom...");
     }else if(chances == 2){
         img = 5;
+        document.getElementById('mensagem').remove();
         menssages("Reeita!");
     }else if(chances == 1){
         img = 6;
+        document.getElementById('mensagem').remove();
         menssages("Só falta uma, UMA perna... Misera!");
     }else if(chances == 0){
         img = 7;
+        document.getElementById('mensagem').remove();
         menssages("Ai não!");
     }
+
+    document.getElementById("img").src = "../IMG/forca0"+img+".png";  
 }
