@@ -106,6 +106,10 @@ main .cards{
     align-items: center;
 }
 
+main .cards:hover{
+    background-color: #2d7c30;
+    cursor: pointer;
+}
 
 footer{
     display: flex;

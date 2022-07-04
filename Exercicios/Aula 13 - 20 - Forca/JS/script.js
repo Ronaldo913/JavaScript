@@ -110,6 +110,7 @@ function letraA(id){
 
         let botao = document.createElement("button");
         botao.setAttribute('id', 'jNovamente');
+        botao.innerText = "Novo jogo";
 
         let div = document.getElementById("nJogo");
         div.appendChild(botao);

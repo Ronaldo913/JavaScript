@@ -155,6 +155,17 @@ main #nJogo #jNovamente{
     background-color: #3a9e3e;
     color: white;
     cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #nJogo #jNovamente:hover{
+    background-color: #2b6b2d;
 }
 
 @keyframes go-back {
