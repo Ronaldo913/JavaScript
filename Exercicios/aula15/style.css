@@ -1,0 +1,41 @@
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#calculadora{
+    width: 360px;
+}
+
+#calculadora button{
+    width: 82px;
+    height: 50px;
+    margin: 4px;
+    border: none;
+    background-color: darkcyan;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#calculadora button:hover{
+    transform: translateX(0) scale(1.2);
+}
+
+
+#resultadoo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#resultadoo input{
+    width: 342px;
+    height: 50px;
+}
+
+#brb{
+    background-color: darkblue;
+    height: 30px;
+}
