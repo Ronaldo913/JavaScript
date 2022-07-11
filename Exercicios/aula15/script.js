@@ -16,6 +16,7 @@ for (i = 0; i < numero.length; i++) {
     if ((i + 1) == numero.length) {
         let input = document.createElement("input")
         input.setAttribute('placeholder', '')
+        input.setAttribute('id', 'visor')
         divv.appendChild(input)
     }
 }
@@ -23,16 +24,11 @@ for (i = 0; i < numero.length; i++) {
 function rodar(id) {
     var input = document.getElementById(id);
     input = 'd'
+    let visor = document.getElementById('visor')
+    visor.value = id
 
     if(id == '+' | id == 'x' | id == '-' | id == '/'){
         
     }
 
 }
-
-
-
-// function resultado(){
-// }
-
-// resultado()
